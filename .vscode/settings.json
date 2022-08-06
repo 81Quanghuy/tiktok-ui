@@ -1,0 +1,8 @@
+{
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
+// - Chuột phải vào màn hình chọn Format Document With... -> 
+// Configure Default Formatter -> Prettier - code formatter
+// - Nếu ctrl S mà code vẫn chưa tự format thì vào File -> Preferences -> Settings. 
+// Tìm kiếm từ khoá format, tick vào ô Format a file on save... của mục Editor: Format on save.
