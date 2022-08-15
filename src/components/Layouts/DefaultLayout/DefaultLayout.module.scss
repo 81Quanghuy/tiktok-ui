@@ -5,11 +5,9 @@
 }
 .container {
   width: var(--default--wight);
-  min-height: 1000px;
-  background-color: #ccc;
+  min-height: 200px;
   display: flex;
 }
 .content {
   flex: 1;
-  background-color: #ccc;
 }
