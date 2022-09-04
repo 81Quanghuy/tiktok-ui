@@ -91,3 +91,14 @@
   transform: translateY(-50%);
   right: calc(var(--search-right-icon));
 }
+.more-btn {
+  font-size: 1.7rem;
+  margin-left: 20px;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0 8px;
+}
+.action {
+  display: flex;
+  align-items: center;
+}

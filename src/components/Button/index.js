@@ -17,6 +17,7 @@ function Button({
   rounded = false,
   leftIcon = false,
   rightIcon = false,
+  boderline = false,
   children,
   onClick,
   ...passProps
@@ -27,7 +28,13 @@ function Button({
     onClick,
     ...passProps,
   };
-
+  if (to) {
+    props.to = to;
+    Compo = Link;
+  } else if (href) {
+    props.href = href;
+    Compo = 'a';
+  }
   if (disabled) {
     Object.keys(props).forEach((key) => {
       if (key.startsWith('on') && typeof props[key] == 'function') {
@@ -44,14 +51,8 @@ function Button({
     text,
     disabled,
     rounded,
+    boderline,
   });
-  if (to) {
-    props.to = to;
-    Compo = Link;
-  } else if (href) {
-    props.href = href;
-    Compo = 'a';
-  }
 
   return (
     <Compo className={classes} {...props}>
